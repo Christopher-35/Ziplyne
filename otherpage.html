@@ -22,8 +22,8 @@
     #topleft {
       letter-spacing: 2px;
       position:fixed;
-      top:68px;
-      left:146px;
+      top: 0px;
+      left: 146px;
       font-family: hkGrotesk;
       font-size: 40px;
       color: #000099;
@@ -45,33 +45,58 @@
       left: 0;
     }
 
-    .image1 {
+    .foot {
       position: relative;
       filter: brightness(100%);
       opacity: 0.85;       
-      top: 709px;
+      top: 624px;
       left: 0; 
     }
 
-    .image2 {
+    .pc {
     position: absolute;
-    bottom: -688px;
+    top: -500px;
     left: -75px; 
     }
     
-    .image3 {
+    .shape {
     position: absolute;
     right: -130px;
-    top: 145px;
+    top: -445px;
     }
         
     </style>    
   </head>
   <body>
-    <div class="parent">    
-      <svg id="Layer_1" class='image1' data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1432 108.5"><defs><style>.cls-1{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" y1="54.25" x2="1432" y2="54.25" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f2f2f2"/><stop offset="0.23" stop-color="#dbcff3"/><stop offset="0.47" stop-color="#c5aef4"/><stop offset="0.47" stop-color="#c6aff4"/><stop offset="0.47" stop-color="#c4adf4"/><stop offset="0.47" stop-color="#c5aef4"/><stop offset="0.48" stop-color="#c6aff4"/><stop offset="0.48" stop-color="#c5aef4"/><stop offset="0.51" stop-color="#c6aff4"/><stop offset="1" stop-color="#b68bf7"/><stop offset="1" stop-color="#b389f2"/><stop offset="1" stop-color="#9775c9"/><stop offset="1" stop-color="#7f63a4"/><stop offset="1" stop-color="#695484"/><stop offset="1" stop-color="#574768"/><stop offset="1" stop-color="#483c52"/><stop offset="1" stop-color="#3d3441"/><stop offset="1" stop-color="#352e36"/><stop offset="1" stop-color="#302b2f"/><stop offset="1" stop-color="#2f2a2d"/><stop offset="1" stop-color="#2b2728"/></linearGradient></defs><polyline class="cls-1" points="0 0 1432 0 1432 108.5 0 108.5"/></svg>
-      <img class="image2" src="pics-info/computerBackground.png" width='1100' height='600'/>
-      <img class='image3' src='pics-info/purpleDiamond.png' width='900' height='750'/>
+    <div class="foot">    
+      <svg width="100%" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <style type="text/css">
+          rect{fill:url(#MyGradient)}
+        </style>
+        <defs>
+          <linearGradient id="MyGradient">
+            <stop offset="5%" stop-color="#F6E4FF" />
+            <stop offset="95%" stop-color="#9F4AFF" />
+          </linearGradient>
+        </defs>
+        
+        <rect width="100%" height="300"/>
+      </svg>
+      <!-- <svg height='140px' id="Layer_1" class='foot' data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+      viewBox="0 0 1432 108.5"><defs><style>.cls-1{fill:url(#linear-gradient);}</style><linearGradient 
+        id="linear-gradient" y1="54.25" x2="1432" y2="54.25" gradientUnits="userSpaceOnUse"><stop offset="0" 
+        stop-color="#f2f2f2"/><stop offset="0.23" stop-color="#dbcff3"/><stop offset="0.47" stop-color="#c5aef4"/>
+        <stop offset="0.47" stop-color="#c6aff4"/><stop offset="0.47" stop-color="#c4adf4"/><stop offset="0.47" 
+        stop-color="#c5aef4"/><stop offset="0.48" stop-color="#c6aff4"/><stop offset="0.48" 
+        stop-color="#c5aef4"/><stop offset="0.51" stop-color="#c6aff4"/><stop offset="1" stop-color="#b68bf7"/>
+        <stop offset="1" stop-color="#b389f2"/><stop offset="1" stop-color="#9775c9"/><stop offset="1" 
+        stop-color="#7f63a4"/><stop offset="1" stop-color="#695484"/><stop offset="1" stop-color="#574768"/>
+        <stop offset="1" stop-color="#483c52"/><stop offset="1" stop-color="#3d3441"/><stop offset="1" 
+        stop-color="#352e36"/><stop offset="1" stop-color="#302b2f"/><stop offset="1" stop-color="#2f2a2d"/>
+        <stop offset="1" stop-color="#2b2728"/></linearGradient></defs><polyline 
+        class="cls-1" points="0 0 1432 0 1432 108.5 0 108.5"/></svg> -->
+      <img class="pc" src="pics-info/computerBackground.png" width='1100' height='585'/>
+      <img class='shape' src='pics-info/purpleDiamond.png' width='800' height='550'/>
     </div>
     <p id='topleft'> Lorem&nbsp Ipsum&nbsp Dolor&nbsp Lorem&nbsp <br> Ipsum&nbsp Dolor&nbsp Amet.</p>
     <p id='middleright'> Lorem ipsum dolor sit<br>
