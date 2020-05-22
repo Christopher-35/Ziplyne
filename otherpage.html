@@ -20,24 +20,45 @@
     }
 
     #topleft {
-      letter-spacing: 2px;
-      position:fixed;
-      top: 0px;
+      position: fixed;
+      top: 55px;
       left: 146px;
+      color: #000099;
       font-family: hkGrotesk;
       font-size: 40px;
-      color: #000099;
+      letter-spacing: 3px;
+      animation: animate 3s steps(27);
+      white-space: nowrap;
+      width: 27;
     }
+    @keyframes animate{
+      from{transform: translateX(-740px)}
+      to{transform: translateX(0px)}
+    }
+    
 
     #middleright {
       position: fixed;
-      top: 355px;
-      right: 200px;
+      top: 302px;
+      right: 90px;
       color: #fff;
       font-family: lato;
       font-size: 23px;
       letter-spacing: 3px;
+      animation: type 3s steps(170);
+      white-space: nowrap;
+      width: 29ch;
     }
+    @keyframes type {
+  0% {
+    width:0ch;
+  }
+  100% {
+    width: 29ch;
+  }
+}
+
+
 
     .parent {
       position: relative;
@@ -55,14 +76,14 @@
 
     .pc {
     position: absolute;
-    top: -500px;
+    top: -470px;
     left: -75px; 
     }
     
     .shape {
     position: absolute;
     right: -130px;
-    top: -445px;
+    top: -496px;
     }
         
     </style>    
@@ -96,9 +117,9 @@
         <stop offset="1" stop-color="#2b2728"/></linearGradient></defs><polyline 
         class="cls-1" points="0 0 1432 0 1432 108.5 0 108.5"/></svg> -->
       <img class="pc" src="pics-info/computerBackground.png" width='1100' height='585'/>
-      <img class='shape' src='pics-info/purpleDiamond.png' width='800' height='550'/>
+      <img class='shape' src='pics-info/purpleDiamond.png' width='740' height='660'/>
     </div>
-    <p id='topleft'> Lorem&nbsp Ipsum&nbsp Dolor&nbsp Lorem&nbsp <br> Ipsum&nbsp Dolor&nbsp Amet.</p>
+    <div id='topleft'> Lorem&nbsp Ipsum&nbsp Dolor&nbsp Lorem&nbsp <br> Ipsum&nbsp Dolor&nbsp Amet.</div>
     <p id='middleright'> Lorem ipsum dolor sit<br>
     amet.Lorem ipsum dolor sit<br> amet.<br><br><br>
     Ut enim ad minim veniam, quis <br>
